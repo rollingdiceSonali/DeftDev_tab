@@ -1,0 +1,161 @@
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rootLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/radio_group"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <RadioButton
+            android:id="@+id/rb_applince"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Appliances"
+            />
+        <RadioButton
+            android:id="@+id/rb_curtain"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Curtains"
+             />
+        <RadioButton
+            android:id="@+id/rb_gateControllers"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="gateControllers"
+             />
+
+        <RadioButton
+            android:id="@+id/rb_sensor"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Sensor"
+            />
+
+
+    </RadioGroup>
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:layout_below="@+id/radio_group"
+    tools:context="com.javapapers.android.expandablelistview.app.MainActivity">
+
+    <ExpandableListView
+        android:id="@+id/expandableListViewForAppliance"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:indicatorLeft="?android:attr/expandableListPreferredItemIndicatorLeft"
+        android:divider="#A4C739"
+        android:scrollbars="vertical"
+        android:animateLayoutChanges="true"
+        android:visibility="visible"
+        android:dividerHeight="1dp" />
+
+    <ExpandableListView
+        android:id="@+id/expandableListViewForCuratain"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:indicatorLeft="?android:attr/expandableListPreferredItemIndicatorLeft"
+        android:divider="#A4C739"
+        android:dividerHeight="1dp"
+        android:scrollbars="vertical"
+        android:visibility="gone"
+       />
+
+    <ExpandableListView
+        android:id="@+id/expandableListViewforgateController"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:indicatorLeft="?android:attr/expandableListPreferredItemIndicatorLeft"
+        android:divider="#A4C739"
+        android:scrollbars="vertical"
+        android:dividerHeight="1dp"
+        android:visibility="gone"/>
+
+    <ExpandableListView
+        android:id="@+id/expandableListViewForSensor"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:indicatorLeft="?android:attr/expandableListPreferredItemIndicatorLeft"
+        android:divider="#A4C739"
+        android:dividerHeight="1dp"
+        android:scrollbars="vertical"
+        android:visibility="gone"
+        />
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+
+
+
+<!--<TextView  android:id="@+id/tvSelectCurtains"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:text="Select Curtains"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/expandableListViewForAppliance"
+        android:textColor="@color/floatingLabelText"/>
+    <View
+        android:layout_height="2dp"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/tvSelectCurtains"
+        android:layout_marginTop="5dp"
+        android:id="@+id/viewCurtain"
+        android:background="@color/floatingLabelText" />
+
+    <ExpandableListView
+        android:id="@+id/expandableListViewForCuratain"
+        android:layout_height="200dp"
+        android:layout_width="match_parent"
+        android:indicatorLeft="?android:attr/expandableListPreferredItemIndicatorLeft"
+        android:divider="#A4C739"
+        android:dividerHeight="1dp"
+        android:scrollbars="vertical"
+        android:layout_below="@+id/viewCurtain"
+        android:layout_alignParentStart="true" />
+
+    <TextView  android:id="@+id/tvSelectgateController"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:text="Select WaterSprikler"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/expandableListViewForCuratain"
+        android:textColor="@color/floatingLabelText"/>
+    <View
+        android:layout_height="2dp"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/tvSelectgateController"
+        android:layout_marginTop="5dp"
+        android:id="@+id/viewgateController"
+        android:background="@color/floatingLabelText" />
+
+
+    <ExpandableListView
+        android:id="@+id/expandableListViewforgateController"
+        android:layout_height="200dp"
+        android:layout_width="match_parent"
+        android:indicatorLeft="?android:attr/expandableListPreferredItemIndicatorLeft"
+        android:divider="#A4C739"
+        android:scrollbars="vertical"
+        android:dividerHeight="1dp"
+        android:layout_below="@+id/viewgateController"
+        />-->

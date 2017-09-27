@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rootLayout"
+    android:paddingBottom="25dp"
+    android:paddingTop="25dp"
+    android:background="@color/bright_foreground_inverse_material_dark"
+    tools:context="com.rollingdice.deft.android.tab.user.UserListOfAllRoomsActivity">
+
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_user_all_rooms"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:transitionName="aniamtion"
+        android:scrollbars="vertical"
+        android:layout_below="@+id/toolbar" />
+
+</RelativeLayout>
+
+
+<!--android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"-->
+
+
+

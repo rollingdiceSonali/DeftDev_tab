@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/remote_rectangle_drawable"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="30dp">
+
+
+        <!--Power On-->
+        <TextView
+            android:id="@+id/btn_power_on_text"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="40dp"
+            android:layout_toLeftOf="@+id/remote_circle"
+            android:gravity="center"
+            android:tag="00"
+            android:text="POWER ON"
+            android:textColor="@color/black17"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/settop_power_on"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:tag="00"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_toLeftOf="@+id/btn_power_on_text"
+            android:background="@drawable/cursor"
+            android:text="Power ON" />
+
+        <!--REPLAY-->
+        <TextView
+            android:id="@+id/settop_power_off_text"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="40dp"
+            android:layout_toLeftOf="@+id/settop_power_on"
+            android:gravity="center"
+            android:text="POWER OFF"
+            android:tag="01"
+            android:textColor="@color/black17"
+            android:textSize="20sp" />
+        <ImageButton
+            android:id="@+id/settop_power_off"
+            android:tag="01"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:layout_toLeftOf="@+id/settop_power_off_text"
+            android:background="@drawable/cursor"
+           />
+
+
+        <!--Reverse-->
+        <TextView
+            android:id="@+id/settop_valume_minus_btn_text"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/settop_valume_minus_btn"
+            android:gravity="center"
+            android:layout_below="@+id/btn_power_on_text"
+            android:text="VOL-"
+            android:tag="09"
+            android:textColor="@color/black17"
+            android:textSize="20sp" />
+        <ImageButton
+            android:id="@+id/settop_valume_minus_btn"
+            android:tag="09"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+
+            android:layout_below="@+id/btn_power_on_text"
+            android:layout_toLeftOf="@+id/btn_power_on_text"
+            android:background="@drawable/cursor"
+            />
+
+
+        <!--Forword-->
+        <TextView
+            android:id="@+id/settop_valume_plus_btn_text"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/settop_valume_plus_btn"
+            android:gravity="center"
+            android:layout_below="@+id/btn_power_on_text"
+            android:text="VOL+"
+            android:tag="10"
+            android:textColor="@color/black17"
+            android:textSize="20sp" />
+        <ImageButton
+            android:id="@+id/settop_valume_plus_btn"
+            android:tag="10"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_alignStart="@+id/settop_power_off"
+            android:layout_below="@+id/btn_power_on_text"
+            android:background="@drawable/cursor"
+            />
+
+
+        <!-- MENU -->
+        <TextView
+            android:id="@+id/settop_mute_btn_text"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/settop_mute_btn"
+            android:gravity="center"
+            android:layout_below="@+id/settop_valume_minus_btn_text"
+            android:text="MUTE"
+            android:tag="14"
+            android:textColor="@color/black17"
+            android:textSize="20sp" />
+        <ImageButton
+            android:id="@+id/settop_mute_btn"
+            android:tag="14"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_alignStart="@+id/settop_power_off"
+            android:layout_below="@+id/settop_valume_minus_btn_text"
+            android:background="@drawable/cursor"
+            android:text="Power ON" />
+
+
+        <!--Play-->
+        <TextView
+            android:id="@+id/settop_home_btn_text"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="40dp"
+            android:layout_toRightOf="@+id/settop_home_btn"
+            android:gravity="center"
+            android:text="HOME"
+            android:tag="08"
+            android:textColor="@color/black17"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/settop_home_btn"
+            android:tag="08"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="40dp"
+            android:layout_toRightOf="@+id/remote_circle"
+            android:background="@drawable/cursor"
+            />
+
+
+
+        <!--Stop-->
+        <TextView
+            android:id="@+id/settop_guide_btn_text"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="40dp"
+            android:layout_toRightOf="@+id/settop_guide_btn"
+            android:gravity="center"
+            android:text="GUIDE"
+            android:tag="02"
+            android:textColor="@color/black17"
+            android:textSize="20sp" />
+        <ImageButton
+            android:id="@+id/settop_guide_btn"
+            android:layout_width="50dp"
+            android:tag="02"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="40dp"
+            android:layout_toRightOf="@+id/settop_home_btn_text"
+            android:background="@drawable/cursor"
+            />
+
+
+        <!--NEXT-->
+        <TextView
+            android:id="@+id/settop_ch_plus_btn_text"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/settop_ch_plus_btn"
+            android:gravity="center"
+            android:text="CH +"
+            android:tag="12"
+            android:layout_below="@+id/settop_guide_btn_text"
+            android:textColor="@color/black17"
+            android:textSize="20sp" />
+        <ImageButton
+            android:id="@+id/settop_ch_plus_btn"
+            android:tag="12"
+            android:layout_below="@+id/settop_guide_btn_text"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/remote_circle"
+            android:background="@drawable/cursor"
+            />
+
+
+        <!--Previous-->
+        <TextView
+            android:id="@+id/settop_ch_minus_btn_text"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/settop_ch_minus_btn"
+            android:gravity="center"
+            android:text="CH -"
+            android:tag="11"
+            android:layout_below="@+id/settop_guide_btn_text"
+            android:textColor="@color/black17"
+            android:textSize="20sp" />
+        <ImageButton
+            android:id="@+id/settop_ch_minus_btn"
+            android:tag="11"
+            android:layout_below="@+id/settop_guide_btn_text"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignStart="@+id/settop_guide_btn"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/settop_ch_plus_btn_text"
+            android:background="@drawable/cursor"
+            />
+
+
+        <!--open-->
+        <TextView
+            android:id="@+id/settop_back_btn_text"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/settop_back_btn"
+            android:gravity="center"
+            android:text="BACK"
+            android:tag="13"
+            android:layout_below="@+id/settop_ch_plus_btn_text"
+            android:textColor="@color/black17"
+            android:textSize="20sp" />
+        <ImageButton
+            android:id="@+id/settop_back_btn"
+            android:tag="13"
+            android:layout_width="50dp"
+            android:layout_below="@+id/settop_ch_plus_btn_text"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_alignStart="@+id/settop_ch_minus_btn"
+            android:layout_toRightOf="@+id/remote_circle"
+            android:background="@drawable/cursor"
+            />
+
+
+
+        <RelativeLayout
+            android:id="@+id/remote_circle"
+            android:layout_width="190dp"
+            android:layout_height="190dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:background="@drawable/remote_circle"
+            android:padding="5dp">
+
+            <Button
+                android:id="@+id/settop_select_btn"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/remote1_circle"
+                android:padding="1dp"
+                android:tag="03"
+                android:text="SELECT"
+                android:textColor="@color/home_bg"
+                android:textSize="16sp" />
+
+            <ImageButton
+                android:id="@+id/settop_left_arrow_btn"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/dvd_select_btn"
+                android:background="@drawable/ic_arrow_left_black"
+                android:padding="2dp"
+                android:tag="04" />
+
+            <ImageButton
+                android:id="@+id/settop_right_arrow_btn"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/dvd_select_btn"
+                android:background="@drawable/ic_arrow_right_black"
+                android:padding="2dp"
+                android:tag="05" />
+
+            <!-- <ImageButton
+                android:id="@+id/right_arrow_btn"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/select_btn"
+                android:background="@drawable/ic_arrow_right_black"
+                android:padding="2dp"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:tag="05"/>-->
+
+            <ImageButton
+                android:id="@+id/settop_up_arrow_btn"
+                android:layout_width="65dp"
+                android:layout_height="50dp"
+                android:layout_above="@+id/dvd_select_btn"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/ic_keyboard_arrow_up"
+                android:padding="2dp"
+                android:tag="06" />
+
+            <ImageButton
+                android:id="@+id/settop_down_arrow_btn"
+                android:layout_width="65dp"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/dvd_select_btn"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/ic_keyboard_arrow_down"
+                android:padding="2dp"
+                android:tag="07" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black17"
+        android:layout_above="@+id/main_layout"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="SETTOP BOX"
+
+        android:textSize="30sp"
+         />
+
+
+</RelativeLayout>

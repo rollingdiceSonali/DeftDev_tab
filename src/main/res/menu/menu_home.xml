@@ -1,0 +1,163 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.rollingdice.deft.android.tab.HomeActivity">
+
+    <!--<item
+        style="@style/HomeTextView"
+        android:id="@+id/music_player"
+        android:orderInCategory="100"
+        android:title="@string/music_player"
+        app:showAsAction="always"
+        android:icon="@drawable/music_system_off"/>-->
+
+    <item android:id="@+id/action_connected"
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        android:icon="@drawable/disconnected"
+        android:title="@string/action_connected" />
+
+    <item
+        style="@style/HomeTextView"
+        android:id="@+id/shortcut_action"
+        android:orderInCategory="100"
+        android:title="@string/action_shortcut"
+        app:showAsAction="always"
+        android:icon="@drawable/shortcut_icon"/>
+
+    <item
+        style="@style/HomeTextView"
+        android:id="@+id/moods_action"
+        android:orderInCategory="100"
+        android:title="Create Moods"
+        app:showAsAction="always"
+        android:icon="@drawable/mode_icon" />
+    <item
+        style="@style/HomeTextView"
+        android:id="@+id/lock_action"
+        android:orderInCategory="100"
+        android:title="Add Locks"
+        app:showAsAction="always"
+        android:icon="@drawable/lock" />
+
+    <item
+        style="@style/HomeTextView"
+        android:id="@+id/remote_action"
+        android:orderInCategory="100"
+        android:title="Remote Configuration"
+        app:showAsAction="always"
+        android:icon="@drawable/apple_remote" />
+
+    <item
+        android:id="@+id/remote_operation"
+        style="@style/HomeTextView"
+        android:icon="@drawable/remotecontrolbuttons"
+        android:orderInCategory="100"
+        android:title="Remote Operation"
+        app:showAsAction="always" />
+
+
+    <item
+        style="@style/HomeTextView"
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="always"
+        android:icon="@drawable/setting_icon1"
+       />
+    <item
+        android:id="@+id/action_start_service"
+        android:orderInCategory="100"
+        android:title="@string/action_start_service"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_start_offline_service"
+        android:orderInCategory="100"
+        android:title="Start Offline Service"
+        app:showAsAction="never" />
+<!--
+
+    <item
+        android:id="@+id/action_stop_service"
+        android:orderInCategory="100"
+        android:title="@string/action_stop_service"
+        app:showAsAction="never" />
+-->
+
+    <!--NOTIFICATION SETTINGS-->
+
+    <item android:id="@+id/notificationSettings"
+        android:title="NOTIFICATION  SETTINGS"
+        android:orderInCategory="100"
+        app:showAsAction="never" >
+
+        <menu>
+            <group
+                android:checkableBehavior="all"
+                >
+                <item android:id="@+id/notificationSettings_schedularNotification"
+                    android:title="Activate Schedular Notification"
+                    android:orderInCategory="100"
+                    android:checked="false"
+                    app:showAsAction="never" />
+
+                <!--<item android:id="@+id/notificationSettings_errorNotification"
+                    android:title="Activate Error Notification"
+                    android:orderInCategory="100"
+                    android:checked="false"
+                    app:showAsAction="never"
+                    />-->
+
+                <item android:id="@+id/notificationSettings_energyNotification"
+                    android:title="Activate Energy Notification"
+                    android:orderInCategory="101"
+                    android:checked="false"
+                    app:showAsAction="never"/>
+
+                <item android:id="@+id/lock"
+                    android:title="Activate Lock Notification"
+                    android:orderInCategory="102"
+                    android:checked="false"
+                    app:showAsAction="never"/>
+
+
+                <item android:id="@+id/notificationSettings_motionDetectioNotification"
+                    android:title="Activate Motion Detection Notification"
+                    android:orderInCategory="103"
+                    android:checked="false"
+                    app:showAsAction="never" />
+            </group>
+        </menu>
+    </item>
+
+    <item
+        style="@style/HomeTextView"
+        android:id="@+id/action_notification"
+        android:orderInCategory="104"
+        android:title="Notification"
+        app:showAsAction="always"
+        android:icon="@drawable/nitification_icon"/>
+     <item
+    style="@style/HomeTextView"
+    android:id="@+id/action_set_alarm"
+    android:orderInCategory="105"
+    android:title="Set Schedular"
+    app:showAsAction="always"
+    android:icon="@drawable/schedule_icon"/>
+
+
+    <item
+        style="@style/HomeTextView"
+        android:id="@+id/action_help"
+        android:orderInCategory="106"
+        android:title="Help"
+        app:showAsAction="always"
+        android:icon="@drawable/help_icon"/>
+
+</menu>
+
+
+<!--   style="@style/HomeTextView"
+
+-->

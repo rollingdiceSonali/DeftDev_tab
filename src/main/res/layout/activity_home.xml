@@ -1,0 +1,782 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:orientation="vertical"
+    android:scrollbars="vertical"
+    tools:context="com.rollingdice.deft.android.tab.HomeActivity">
+
+
+
+    <HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/subHorizantalScrollView"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="83dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view_lights"
+                android:layout_width="157dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="3dp"
+                android:clickable="true"
+                card_view:cardCornerRadius="25dp"
+                card_view:cardBackgroundColor="@color/card_background_theme"
+                >
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:src="@drawable/light_off" />
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/HomeTextViewHeader"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:ellipsize="marquee"
+                        android:gravity="center"
+                        android:text="@string/light" />
+
+                    <TextView
+                        android:id="@+id/tv_lights"
+                        style="@style/HomeTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:ellipsize="marquee"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:gravity="center_horizontal|top"
+                        android:text="0/0"
+                        android:visibility="invisible"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view_fans"
+                android:layout_width="157dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="3dp"
+                card_view:cardBackgroundColor="@color/card_background_theme"
+                card_view:cardCornerRadius="25dp"
+                >
+
+
+                <LinearLayout
+                    android:id="@+id/iv_fans"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:orientation="vertical">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:src="@drawable/fan_off" />
+                    </LinearLayout>
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:ellipsize="marquee"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:text="@string/fans"
+                        style="@style/HomeTextViewHeader" />
+
+                    <TextView
+                        android:id="@+id/tv_fans"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:ellipsize="marquee"
+                        android:gravity="center_horizontal|top"
+                        android:text="0/0"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:visibility="invisible"
+                        style="@style/HomeTextView" />
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view_sockets"
+                android:layout_width="157dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="2dp"
+                android:layout_weight="1"
+                card_view:cardBackgroundColor="@color/card_background_theme"
+                card_view:cardCornerRadius="25dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:src="@drawable/sockets_off" />
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/HomeTextViewHeader"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:ellipsize="marquee"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:text="@string/sockets" />
+
+                    <TextView
+                        android:id="@+id/tv_sockets"
+                        style="@style/HomeTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:ellipsize="marquee"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:gravity="center_horizontal|top"
+                        android:text="0/0"
+                        android:visibility="invisible"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view_curtains"
+                android:layout_width="157dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="2dp"
+                android:layout_weight="2.46"
+                card_view:cardBackgroundColor="@color/card_background_theme"
+                card_view:cardCornerRadius="25dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:src="@drawable/curtain_icon"
+                            />
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/HomeTextViewHeader"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:ellipsize="marquee"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:text="@string/curtains" />
+
+                    <TextView
+                        android:id="@+id/tv_curtain"
+                        style="@style/HomeTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:ellipsize="marquee"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:gravity="center_horizontal|top"
+                        android:text="0/0"
+                        android:visibility="invisible"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view_GATE_CONTROLLER"
+                android:layout_width="157dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="2dp"
+                android:layout_weight="2.46"
+                card_view:cardBackgroundColor="@color/card_background_theme"
+                card_view:cardCornerRadius="25dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:src="@drawable/water_sprinklers_icon"
+                            />
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/HomeTextViewHeader"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:ellipsize="marquee"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:text="@string/gateController" />
+
+                    <TextView
+                        android:id="@+id/tv_sprinkler"
+                        style="@style/HomeTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:ellipsize="marquee"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:gravity="center_horizontal|top"
+                        android:text="0/0"
+                        android:visibility="invisible"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+
+    </HorizontalScrollView>
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="80dp"
+        android:layout_marginBottom="100dp"
+        android:id="@+id/horizontalScrollView">
+
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view_devices"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginRight="2dp"
+                android:clickable="false"
+                android:layout_weight="1"
+                card_view:cardBackgroundColor="@color/card_background_theme"
+                card_view:cardCornerRadius="25dp">
+
+                <LinearLayout
+                    android:id="@+id/linear_layout_power"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/linear_layout_power1"
+                        android:layout_width="117dp"
+                        android:layout_height="71dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/linear_layout_power2"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/on_devices_icon" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_devices"
+                        style="@style/HomeTextViewHeaderTop"
+                        android:layout_width="109dp"
+                        android:layout_height="match_parent"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:ellipsize="marquee"
+                        android:gravity="center_horizontal|top"
+                        android:visibility="gone"
+                        android:text="0\n Devices powered on" />
+
+                    <TextView
+                        android:id="@+id/tv_devices1"
+                        style="@style/HomeTextViewHeaderTop"
+                        android:layout_width="109dp"
+                        android:layout_height="match_parent"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:ellipsize="marquee"
+                        android:gravity="center_horizontal|top"
+                        android:text="\n On Devices" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view_energy"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="3dp"
+                android:layout_weight="1"
+                card_view:cardBackgroundColor="@color/card_background_theme"
+                card_view:cardCornerRadius="25dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="133dp"
+                        android:layout_height="144dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:src="@drawable/energy" />
+
+                        <TextView
+                            style="@style/HomeTextViewHeaderTop"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textSize="15dp"
+                            android:ellipsize="marquee"
+                            android:gravity="center_horizontal|top"
+                            android:text="\n Energy " />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view_rooms"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="3dp"
+                android:layout_weight="1"
+                card_view:cardBackgroundColor="@color/card_background_theme"
+                card_view:cardCornerRadius="25dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="134dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:src="@drawable/room_icon" />
+
+                        <TextView
+                            android:id="@+id/tv_rooms"
+                            style="@style/HomeTextView"
+                            android:layout_width="66dp"
+                            android:layout_height="29dp"
+                            android:ellipsize="marquee"
+                            android:textStyle="bold"
+                            android:textSize="15dp"
+                            android:gravity="center_horizontal|top"
+                            android:text="0"
+                            android:layout_gravity="center_horizontal" />
+
+
+                        <TextView
+                            style="@style/HomeTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="39dp"
+                            android:ellipsize="marquee"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:textSize="15dp"
+                            android:text="@string/room"
+                            android:layout_gravity="center_horizontal" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view_applinaces"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="3dp"
+                android:layout_weight="1"
+                card_view:cardBackgroundColor="@color/card_background_theme"
+                card_view:cardCornerRadius="25dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:src="@drawable/appliance" />
+
+                        <TextView
+                            android:id="@+id/tv_applinces"
+                            style="@style/HomeTextView"
+                            android:layout_width="66dp"
+                            android:layout_height="29dp"
+                            android:ellipsize="marquee"
+                            android:textStyle="bold"
+                            android:textSize="15dp"
+                            android:gravity="center_horizontal|top"
+                            android:text="0"
+                            android:layout_gravity="center_horizontal" />
+
+
+                        <TextView
+                            style="@style/HomeTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="39dp"
+                            android:ellipsize="marquee"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:textSize="15dp"
+                            android:text="APPLIANCES"
+                            android:layout_gravity="center_horizontal" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view_modes"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="3dp"
+                android:layout_weight="1"
+                card_view:cardBackgroundColor="@color/card_background_theme"
+                card_view:cardCornerRadius="25dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="132dp"
+                        android:layout_height="138dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:src="@drawable/mode_icon" />
+
+
+                        <TextView
+                            style="@style/HomeTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="39dp"
+                            android:ellipsize="marquee"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:textSize="15dp"
+                            android:text="\n MOODS"
+                            android:layout_gravity="center_horizontal" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_sensors"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="3dp"
+                android:layout_weight="1"
+                card_view:cardBackgroundColor="@color/card_background_theme"
+                card_view:cardCornerRadius="25dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:src="@drawable/sensor" />
+
+
+                        <TextView
+                            style="@style/HomeTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="39dp"
+                            android:ellipsize="marquee"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:textSize="15dp"
+                            android:text="\n Sensors"
+                            android:layout_gravity="center_horizontal" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_locks"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="3dp"
+                android:layout_weight="1"
+                card_view:cardBackgroundColor="@color/card_background_theme"
+                card_view:cardCornerRadius="25dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:src="@drawable/lock" />
+
+
+                        <TextView
+                            style="@style/HomeTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="39dp"
+                            android:ellipsize="marquee"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:textSize="15dp"
+                            android:text="\n LOCKS"
+                            android:layout_gravity="center_horizontal" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/Base.Widget.AppCompat.ActionButton.Overflow"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"/>
+    <!--android:background="@color/transparent"-->
+
+
+    <ImageView
+        android:layout_width="191dp"
+        android:layout_height="199dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/logo_deft"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:visibility="visible"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/good_bye"
+        android:visibility="visible"
+        style="@style/HomeTextView"
+        android:textSize="18sp"
+        android:shadowColor="#121230"
+        android:textStyle="bold"
+        android:ellipsize="marquee"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:id="@+id/button_global_off"
+        android:background="@drawable/rounded_shape"
+        android:layout_marginRight="20dp"
+        android:focusable="true"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentLeft="true"/>
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/small_logo"
+        android:src="@drawable/small_logo1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:visibility="gone"/>
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:id="@+id/btnCamera"
+        android:visibility="visible"
+        android:background="@drawable/webcam11"
+        android:layout_alignTop="@+id/button_global_off"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/button_global_off"
+        android:layout_marginRight="20dp"/>
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:id="@+id/btnVoice"
+        android:visibility="visible"
+        android:background="@drawable/voice"
+        android:layout_alignTop="@+id/button_global_off"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/button_global_off"
+        android:layout_marginRight="140dp"
+        />
+
+
+</RelativeLayout>
+

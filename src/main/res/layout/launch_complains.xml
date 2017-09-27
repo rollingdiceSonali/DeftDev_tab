@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:text="Launch New Complains"
+        android:id="@+id/btn_new_complains"
+        android:layout_gravity="center_horizontal" />
+
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/complains_form"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:scrollbars="vertical">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="CustomerId"
+        android:editable="false"
+        android:id="@+id/edt_customer_id"
+        android:textStyle="bold"
+        android:textColor="@color/appliance_name_header"
+        app:met_clearButton="true"
+        app:met_errorColor="@color/error"
+        app:met_floatingLabel="highlight"
+        app:met_underlineColor="@color/correct"/>
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Customer Name"
+        android:editable="false"
+        android:id="@+id/edt_customer_name"
+            android:textStyle="bold"
+            android:textColor="@color/appliance_name_header"
+        app:met_clearButton="true"
+        app:met_errorColor="@color/error"
+        app:met_floatingLabel="highlight"
+        app:met_underlineColor="@color/correct"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:editable="false"
+            android:hint="Mobile Number"
+            android:textStyle="bold"
+            android:textColor="@color/appliance_name_header"
+            android:id="@+id/edt_mobile_number"
+            app:met_clearButton="true"
+            app:met_errorColor="@color/error"
+            app:met_floatingLabel="highlight"
+            app:met_minCharacters="10"
+            app:met_underlineColor="@color/correct"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/edt_complains_id"
+            android:textStyle="bold"
+            android:textColor="@color/appliance_name_header"
+            android:hint="ComplainsId"
+            android:editable="false"
+            app:met_clearButton="true"
+            app:met_errorColor="@color/error"
+            app:met_floatingLabel="highlight"
+            app:met_underlineColor="@color/correct"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/edt_short_description"
+            android:textStyle="bold"
+            android:textColor="@color/appliance_name_header"
+            android:hint="ShortDescription"
+            app:met_clearButton="true"
+            app:met_minCharacters="30"
+            app:met_errorColor="@color/error"
+            app:met_floatingLabel="highlight"
+            app:met_underlineColor="@color/correct"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/edt_description"
+        android:textStyle="bold"
+        android:textColor="@color/appliance_name_header"
+        android:hint="Description"
+        app:met_clearButton="true"
+        app:met_errorColor="@color/error"
+        app:met_floatingLabel="highlight"
+        app:met_floatingLabelTextColor="@color/appliance_name_header"
+        app:met_underlineColor="@color/correct"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/appliance_name_header"
+        android:hint="State"
+        android:text="OPEN"
+        android:editable="false"
+        android:id="@+id/edit_state"
+        app:met_clearButton="true"
+        app:met_errorColor="@color/error"
+        app:met_floatingLabel="highlight"
+        app:met_underlineColor="@color/correct"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/btn_submit"
+        android:layout_gravity="center_horizontal" />
+
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_height="530dp"
+        android:layout_width="match_parent"
+        android:visibility="visible"
+        android:id="@+id/recycler_view_complains_details">
+    </android.support.v7.widget.RecyclerView>
+
+
+
+
+
+
+</LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>

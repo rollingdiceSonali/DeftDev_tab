@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+
+    <TextView
+        android:id="@+id/txt_trigger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trigger"
+        android:textSize="20dp"
+        android:layout_toRightOf="@+id/triggerRadioGroup"
+        android:layout_toEndOf="@+id/triggerRadioGroup"
+        android:layout_above="@+id/sensorRadioButton" />
+
+    <RadioGroup
+        android:id="@+id/triggerRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+    </RadioGroup>
+
+    <RadioButton
+        android:id="@+id/timeRadioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time Based"
+        android:layout_above="@+id/onOffSwitch"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RadioButton
+        android:id="@+id/sensorRadioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sensor Based"
+        android:layout_above="@+id/timeRadioButton"
+        android:layout_alignRight="@+id/timeRadioButton"
+        android:layout_alignEnd="@+id/timeRadioButton" />
+
+    <Switch
+        android:id="@+id/onOffSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Appliance State "
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/triggerRadioGroup"
+        android:layout_toEndOf="@+id/triggerRadioGroup" />
+
+
+
+    <SeekBar
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:id="@+id/seekBar"
+        android:layout_below="@+id/txt_level"
+        android:layout_toRightOf="@+id/triggerRadioGroup"
+        android:layout_toEndOf="@+id/triggerRadioGroup" />
+
+    <TextView
+        android:id="@+id/txt_level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Level"
+        android:layout_below="@+id/onOffSwitch"
+        android:layout_alignRight="@+id/txt_trigger"
+        android:layout_alignEnd="@+id/txt_trigger" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/triggerRadioGroup"
+        android:layout_alignLeft="@+id/txt_level"
+        android:layout_alignStart="@+id/txt_level" />
+
+</RelativeLayout>

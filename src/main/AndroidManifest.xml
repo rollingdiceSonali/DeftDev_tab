@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.rollingdice.deft.android.tab">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <uses-feature
+        android:name="android.hardware.wifi.direct"
+        android:required="true" />
+
+
+    <application
+        android:name="com.rollingdice.deft.android.tab.GlobalApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name="com.rollingdice.deft.android.tab.SplashScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.rollingdice.deft.android.tab.AddUserDetails"
+            android:label="@string/title_activity_add_user_details"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="stateHidden"></activity>
+
+        <activity
+            android:name="com.rollingdice.deft.android.tab.RoomDetailsActivity"
+            android:label="@string/title_activity_room_details"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="stateHidden"></activity>
+
+        <activity
+            android:name="com.rollingdice.deft.android.tab.RoomListActivity"
+            android:label="@string/title_activity_room_list"
+            android:screenOrientation="landscape"></activity>
+
+        <meta-data
+            android:name="AA_DB_NAME"
+            android:value="/sdcard/Android/data/com.rollingdice.deft.android/DEFTMASTER/RollingDice.db" />
+        <meta-data
+            android:name="AA_DB_VERSION"
+            android:value="29" />
+        <!-- DB Version : 24  - change when   WaterSprinklerDetails add -->
+        <!-- DB Version : 26 => 27  - change when   Mode change add -->
+
+        <meta-data
+            android:name="AA_MODELS"
+            android:value="com.rollingdice.deft.android.tab.model.Appliance,  com.rollingdice.deft.android.tab.model.Customer,
+                           com.rollingdice.deft.android.tab.model.Room,  com.rollingdice.deft.android.tab.model.Sensor,
+                           com.rollingdice.deft.android.tab.model.Curtain,com.rollingdice.deft.android.tab.model.Shortcut,
+                           com.rollingdice.deft.android.tab.model.Scene,com.rollingdice.deft.android.tab.model.Scene_Configuration,
+                           com.rollingdice.deft.android.tab.model.Mode ,com.rollingdice.deft.android.tab.model.GateController,
+                           com.rollingdice.deft.android.tab.model.Lock,com.rollingdice.deft.android.tab.model.EnergyData,
+                           com.rollingdice.deft.android.tab.model.EnergyInfo,com.rollingdice.deft.android.tab.model.Remote,
+                           com.rollingdice.deft.android.tab.model.RemoteKeyDetails,com.rollingdice.deft.android.tab.model.WaterSprinklerDetails" />
+
+
+        <activity
+            android:name="com.rollingdice.deft.android.tab.ConfigrationActivity"
+            android:screenOrientation="landscape">
+
+        </activity>
+        <activity
+            android:name="com.rollingdice.deft.android.tab.SensorDetailActivity"
+            android:label="@string/title_activity_dialog"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.IinspinDialog" />
+
+        <activity
+            android:name="com.rollingdice.deft.android.tab.ApplianceDetailsActivity"
+            android:label="@string/title_activity_appliance_details"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.IinspinDialog" />
+
+        <activity
+            android:name="com.rollingdice.deft.android.tab.HomeActivity"
+            android:label="@string/title_activity_home"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name="com.rollingdice.deft.android.tab.Login"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.NoActionBar"></activity>
+
+
+        <activity
+            android:name="com.rollingdice.deft.android.tab.user.UserListOfAllRoomsActivity"
+            android:label="@string/title_activity_user_room_list"
+            android:parentActivityName="com.rollingdice.deft.android.tab.HomeActivity"
+            android:screenOrientation="landscape">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rollingdice.deft.android.tab.HomeActivity" />
+        </activity>
+
+
+        <activity
+            android:name="com.rollingdice.deft.android.tab.user.UserApplianceAndSensorActivity"
+            android:label="@string/title_activity_user_appliance_and_sensor"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name="com.rollingdice.deft.android.tab.user.UserListOfAllOnDevicesActivity"
+            android:label="@string/title_activity_user_list_of_all_on_devices"
+            android:parentActivityName="com.rollingdice.deft.android.tab.HomeActivity"
+            android:screenOrientation="landscape">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rollingdice.deft.android.tab.HomeActivity" />
+        </activity>
+
+        <activity
+            android:name="com.rollingdice.deft.android.tab.user.UserListOfAllOnLightsActivity"
+            android:label="@string/title_activity_user_list_of_all_on_lights"
+            android:parentActivityName="com.rollingdice.deft.android.tab.HomeActivity"
+            android:screenOrientation="landscape">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rollingdice.deft.android.tab.HomeActivity" />
+        </activity>
+
+        <activity
+            android:name="com.rollingdice.deft.android.tab.user.UserListOfAllOnFansActivity"
+            android:label="@string/title_activity_user_list_of_all_on_fans"
+            android:parentActivityName="com.rollingdice.deft.android.tab.HomeActivity"
+            android:screenOrientation="landscape">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rollingdice.deft.android.tab.HomeActivity" />
+        </activity>
+
+        <activity
+            android:name="com.rollingdice.deft.android.tab.user.UserListOfAllOnSocketsActivity"
+            android:label="@string/title_activity_user_list_of_all_on_sockets"
+            android:parentActivityName="com.rollingdice.deft.android.tab.HomeActivity"
+            android:screenOrientation="landscape">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rollingdice.deft.android.tab.HomeActivity" />
+        </activity>
+
+        <activity
+            android:name="com.rollingdice.deft.android.tab.user.UserListofEnergyActivity"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name="com.rollingdice.deft.android.tab.user.ShortcutActivity"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name="com.rollingdice.deft.android.tab.CurtainDetailActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.IinspinDialog" />
+
+        <activity
+            android:name="com.rollingdice.deft.android.tab.user.UserListOfAllOnCurtainActivity"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name="com.rollingdice.deft.android.tab.ModeDetailsActivity"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name="com.rollingdice.deft.android.tab.user.UserListOfAllModeActivity"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name="com.rollingdice.deft.android.tab.user.UserSensorActivity"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name="com.rollingdice.deft.android.tab.user.SelectRemoteActivity"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name="com.rollingdice.deft.android.tab.NotificationListActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.Dialog"></activity>
+
+        <activity
+            android:name="com.rollingdice.deft.android.tab.HelpActivity"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name="com.rollingdice.deft.android.tab.user.UserListOfAllGateControllers"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name="com.rollingdice.deft.android.tab.GateControllerDetailActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.IinspinDialog" />
+
+        <activity
+            android:name="com.rollingdice.deft.android.tab.LaunchComplainsActivity"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name="com.rollingdice.deft.android.tab.MyActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.Dialog.Alert">
+
+        </activity>
+        <activity
+            android:name="com.rollingdice.deft.android.tab.user.UserSchedularActivity"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name="com.rollingdice.deft.android.tab.Music.MusicPlayerActivity"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name="com.rollingdice.deft.android.tab.NewModeDetailsActivity"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name="com.rollingdice.deft.android.tab.LockDetailsActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.IinspinDialog" />
+
+        <activity
+            android:name="com.rollingdice.deft.android.tab.user.UserListAllLockActivity"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name="com.rollingdice.deft.android.tab.RemoteConfigDetailsActivity"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name="com.rollingdice.deft.android.tab.user.NewUserRemoteActivity"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name="com.rollingdice.deft.android.tab.MyPdfViewerActivity"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name="com.rollingdice.deft.android.tab.P2P.WiFiDirectActivity"
+            android:screenOrientation="landscape" />
+
+        <service
+            android:name="com.rollingdice.deft.android.tab.P2P.FileTransferService"
+            android:enabled="true" />
+
+        <activity
+            android:name="com.rollingdice.deft.android.tab.Voice.HoundVoiceSearchExampleActivity"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name="com.rollingdice.deft.android.tab.Voice.CustomSearchActivity"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name="com.rollingdice.deft.android.tab.Voice.TextSearchActivity"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name="com.rollingdice.deft.android.tab.Voice.StartActivity"
+            android:screenOrientation="landscape" />
+
+        <service
+            android:name="com.rollingdice.deft.android.tab.SocketCommunicationService"
+            android:exported="false"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="com.rollingdice.deft.android.tab.SocketCommunicationService" />
+            </intent-filter>
+        </service>
+
+
+        <service android:name="com.rollingdice.deft.android.tab.Music.MusicService" />
+
+
+        <service android:name="com.rollingdice.deft.android.tab.SchedularSevice">
+            <intent-filter>
+                <action android:name="com.rollingdice.deft.android.tab.SchedularService" />
+            </intent-filter>
+        </service>
+
+
+        <receiver android:name="com.rollingdice.deft.android.tab.StartServiceAtBoot">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"></action>
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name="com.rollingdice.deft.android.tab.NotificationBroadCastReceiver">
+            <intent-filter>
+                <action android:name="com.rollingdice.deft.android.tab.user.UserListOfAllScenesActivity.OK_ACTION" />
+                <action android:name="com.rollingdice.deft.android.tab.user.UserListOfAllScenesActivity.CANCEL_ACTION" />
+            </intent-filter>
+
+        </receiver>
+
+        <receiver
+            android:name="com.rollingdice.deft.android.tab.ConnectionChangeReceiver"
+            android:label="NetworkConnection">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.intent.action.PACKAGE_RESTARTED" />
+                <action android:name=".MyActivity" />
+                <action android:name="ServiceStopBroadcast" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name="com.rollingdice.deft.android.tab.user.SceneBroadCastReceiver" /><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+             App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <!--<meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />-->
+    </application>
+
+</manifest>

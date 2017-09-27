@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_layout"
+
+    android:paddingLeft="100dp"
+    android:paddingRight="100dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+<TextView
+
+    android:layout_marginTop="20sp"
+    android:layout_centerHorizontal="true"
+    android:textSize="30sp"
+    android:textColor="@color/black17"
+
+    android:text="AC Remote"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+
+
+
+    <TextView
+        android:id="@+id/txt_temprature"
+        android:layout_centerHorizontal="true"
+        android:textSize="50sp"
+        android:layout_marginTop="120dp"
+        android:text="18"
+        android:textColor="@color/black17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:textSize="30sp"
+        android:text="o"
+
+        android:textColor="@color/black17"
+        android:id="@+id/deg_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/txt_temprature"
+        android:layout_alignTop="@+id/txt_temprature" />
+
+    <TextView
+        android:text="C"
+
+        android:textColor="@color/black17"
+        android:textSize="50sp"
+        android:id="@+id/deg_unit_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/deg_tv"
+        android:layout_toEndOf="@+id/deg_tv" />
+
+    <org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
+        android:id="@+id/discrete_seek_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        app:dsb_max="30"
+        app:dsb_min="18"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="50dp"
+        app:dsb_indicatorColor="@color/gray"
+        app:dsb_progressColor="@color/gray"
+        app:dsb_trackColor="@color/gray"
+        android:layout_below="@+id/txt_temprature"
+        android:layout_alignParentStart="true" />
+
+
+    <ImageButton
+        android:background="@drawable/cursor"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="100dp"
+        android:layout_below="@+id/btn_power_on"
+        android:id="@+id/mode_btn"
+        android:tag="03"
+        android:layout_width="60dp"
+        android:layout_height="60dp" />
+    <TextView
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="30dp"
+        android:text="MODE"
+        android:tag="03"
+        android:textSize="20sp"
+       android:gravity="center"
+        android:layout_below="@+id/btn_power_on"
+        android:textColor="@color/black17"
+        android:layout_toRightOf="@+id/mode_btn"
+        android:id="@+id/mode_btn_text"
+        android:layout_width="wrap_content"
+     android:layout_marginRight="20dp"
+        android:layout_height="60dp" />
+
+    <ImageButton
+        android:background="@drawable/cursor"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/btn_power_on_text"
+        android:layout_below="@+id/btn_power_on"
+        android:id="@+id/fan_btn"
+        android:tag="02"
+        android:layout_width="60dp"
+        android:layout_height="60dp" />
+    <TextView
+        android:layout_marginLeft="3dp"
+        android:text="FAN"
+        android:tag="02"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_below="@+id/btn_power_on"
+        android:textColor="@color/black17"
+        android:layout_toRightOf="@+id/fan_btn"
+        android:id="@+id/fan_btn_text"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp" />
+
+
+    <ImageButton
+        android:background="@drawable/cursor"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/btn_power_off_text"
+        android:layout_below="@+id/btn_power_on"
+        android:id="@+id/comfort_btn"
+        android:tag="04"
+        android:layout_width="60dp"
+        android:layout_height="60dp" />
+    <TextView
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="30dp"
+        android:text="COMFORT"
+        android:tag="04"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_below="@+id/btn_power_on"
+        android:textColor="@color/black17"
+        android:layout_toRightOf="@+id/swing_btn"
+        android:id="@+id/comfort_btn_text"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp" />
+
+
+    <ImageButton
+        android:background="@drawable/cursor"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/swing_btn_text"
+        android:layout_below="@+id/btn_power_on"
+        android:id="@+id/preset_btn"
+        android:layout_width="60dp"
+        android:tag="07"
+        android:layout_height="60dp" />
+    <TextView
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="30dp"
+        android:text="PRESET"
+        android:textSize="20sp"
+        android:tag="07"
+        android:gravity="center"
+        android:layout_below="@+id/btn_power_on"
+        android:textColor="@color/black17"
+        android:layout_toRightOf="@+id/fix_btn"
+        android:id="@+id/preset_btn_text"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp" />
+
+
+
+    <ImageButton
+        android:background="@drawable/cursor"
+        android:layout_marginLeft="100dp"
+        android:layout_below="@+id/discrete_seek_bar"
+        android:id="@+id/btn_power_on"
+        android:tag="00"
+        android:layout_width="60dp"
+        android:layout_height="60dp" />
+    <TextView
+        android:layout_marginLeft="3dp"
+        android:text="POWER ON"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:tag="00"
+        android:layout_below="@+id/discrete_seek_bar"
+        android:textColor="@color/black17"
+        android:layout_toRightOf="@+id/btn_power_on"
+        android:id="@+id/btn_power_on_text"
+        android:layout_width="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_height="60dp" />
+
+    <ImageButton
+        android:background="@drawable/cursor"
+        android:layout_toRightOf="@+id/btn_power_on_text"
+        android:layout_below="@+id/discrete_seek_bar"
+        android:id="@+id/btn_power_off"
+        android:layout_width="60dp"
+        android:tag="01"
+        android:layout_height="60dp" />
+    <TextView
+        android:layout_marginLeft="3dp"
+        android:text="POWER OFF"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:tag="01"
+        android:layout_below="@+id/discrete_seek_bar"
+        android:textColor="@color/black17"
+        android:layout_toRightOf="@+id/btn_power_off"
+        android:id="@+id/btn_power_off_text"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp" />
+
+
+    <ImageButton
+        android:background="@drawable/cursor"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/btn_power_off_text"
+        android:layout_below="@+id/discrete_seek_bar"
+        android:id="@+id/swing_btn"
+        android:tag="05"
+        android:layout_width="60dp"
+        android:layout_height="60dp" />
+    <TextView
+        android:layout_marginLeft="3dp"
+        android:text="SWING"
+        android:textSize="20sp"
+        android:tag="05"
+        android:gravity="center"
+        android:layout_below="@+id/discrete_seek_bar"
+        android:textColor="@color/black17"
+        android:layout_toRightOf="@+id/swing_btn"
+        android:id="@+id/swing_btn_text"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp" />
+
+
+    <ImageButton
+        android:background="@drawable/cursor"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/swing_btn_text"
+        android:layout_below="@+id/discrete_seek_bar"
+        android:id="@+id/fix_btn"
+        android:tag="06"
+        android:layout_width="60dp"
+        android:layout_height="60dp" />
+    <TextView
+        android:layout_marginLeft="3dp"
+        android:text="FIX"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:tag="06"
+        android:layout_below="@+id/discrete_seek_bar"
+        android:textColor="@color/black17"
+        android:layout_toRightOf="@+id/fix_btn"
+        android:id="@+id/fix_btn_text"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp" />
+
+
+
+    <!--<Button
+        android:text="Power On"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/remote_circle_blue"
+        android:id="@+id/btn_power_on"
+        android:layout_width="70dp"
+        android:tag="00"
+        android:layout_marginBottom="30dp"
+        android:textColor="@color/black17"
+        android:layout_height="60dp"
+        android:layout_below="@+id/discrete_seek_bar"
+        android:layout_alignStart="@+id/mode_btn" />
+
+    <Button
+        android:id="@+id/btn_power_off"
+        android:text="Power Off"
+        android:background="@drawable/remote_circle_blue"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/discrete_seek_bar"
+        android:layout_toEndOf="@+id/swing_btn" />
+
+
+
+    <Button
+        android:id="@+id/swing_btn"
+        android:text="SWING"
+        android:tag="05"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btn_power_on"
+        android:textColor="@color/black17"
+        android:layout_marginRight="70dp"
+        android:layout_marginLeft="70dp"
+
+        android:background="@drawable/remote_circle_blue"
+        android:layout_width="70dp"
+        android:layout_height="60dp" />
+
+    <Button
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btn_power_on"
+        android:text="FEEL"
+        android:textColor="@color/black17"
+        android:background="@drawable/remote_circle_blue"
+        android:layout_toRightOf="@+id/swing_btn"
+        android:id="@+id/fix_btn"
+        android:layout_width="70dp"
+        android:tag="06"
+        android:layout_height="60dp"
+        />
+
+
+    <Button
+        android:layout_below="@+id/btn_power_on"
+        android:layout_toLeftOf="@+id/swing_btn"
+        android:text="Mode"
+        android:tag="03"
+        android:background="@drawable/remote_circle_blue"
+        android:id="@+id/mode_btn"
+        android:layout_width="70dp"
+        android:textColor="@color/black17"
+        android:layout_height="60dp" />
+
+
+    <Button
+        android:layout_marginTop="30dp"
+        android:id="@+id/fan_btn"
+        android:text="Fan"
+        android:textColor="@color/black17"
+        android:layout_below="@+id/swing_btn"
+        android:tag="02"
+        android:layout_marginRight="70dp"
+        android:layout_marginLeft="70dp"
+        android:background="@drawable/remote_circle_blue"
+        android:layout_centerHorizontal="true"
+        android:layout_width="70dp"
+        android:layout_height="60dp" />
+
+    <Button
+        android:text="QUITE"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/fix_btn"
+        android:textColor="@color/black17"
+        android:background="@drawable/remote_circle_blue"
+        android:layout_toRightOf="@+id/fan_btn"
+        android:id="@+id/comfort_btn"
+        android:layout_width="70dp"
+        android:layout_marginRight="10dp"
+        android:tag="04"
+        android:layout_height="60dp"
+
+        />
+
+    <Button
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/mode_btn"
+        android:text="TEMP"
+        android:textColor="@color/black17"
+        android:background="@drawable/remote_circle_blue"
+        android:id="@+id/preset_btn"
+        android:layout_width="70dp"
+        android:tag="07"
+        android:layout_toLeftOf="@+id/fan_btn"
+        android:layout_height="60dp"
+        />-->
+
+
+
+
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+  <!--  <android.support.v7.widget.CardView
+        android:layout_height="wrap_content"
+        card_view:cardBackgroundColor="@color/transparent"
+        android:padding="20dp"
+        android:layout_marginTop="39dp"
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:id="@+id/remote_description"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:padding="5dp">
+
+            <RelativeLayout
+                android:id="@+id/ic_img_layout"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/remote_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ac_icon"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="30dp"/>
+
+                <TextView
+                    android:id="@+id/applinaceName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="AC"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/appliance_name_header"
+                    android:layout_toRightOf="@+id/remote_icon"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:id="@+id/brandName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LG"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/appliance_name_header"
+                    android:layout_marginLeft="10dp"
+                    android:layout_below="@+id/applinaceName"
+                    android:layout_toRightOf="@+id/remote_icon"/>
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_centerInParent="true"
+                android:layout_marginTop="30dp"
+                android:layout_below="@+id/ic_img_layout"
+                android:id="@+id/action_btn_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/swing_btn"
+                    android:text="SWING"
+                    android:tag="05"
+                    android:textColor="@color/white"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@+id/btn_power_off"
+                    android:background="@drawable/remote_circle_blue"
+                    android:layout_width="70dp"
+                    android:layout_height="60dp" />
+
+                <Button
+
+                    android:text="Power On"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentStart="true"
+                    android:background="@drawable/remote_circle_blue"
+                    android:id="@+id/btn_power_on"
+                    android:layout_width="70dp"
+                    android:tag="00"
+                    android:textColor="@color/white"
+                    android:layout_height="60dp" />
+
+
+                <Button
+                    android:text="Power Off"
+                    android:textColor="@color/white"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/remote_circle_blue"
+                    android:layout_toRightOf="@+id/btn_power_on"
+                    android:id="@+id/btn_power_off"
+                    android:layout_width="70dp"
+                    android:tag="01"
+                    android:layout_height="60dp"
+
+                    />
+
+                <Button
+                    android:text="FEEL"
+                    android:textColor="@color/white"
+                    android:background="@drawable/remote_circle_blue"
+                    android:layout_toRightOf="@+id/swing_btn"
+                    android:id="@+id/fix_btn"
+                    android:layout_width="70dp"
+                    android:tag="06"
+                    android:layout_height="60dp"
+
+                    />
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="30dp"
+                android:layout_centerInParent="true"
+                android:id="@+id/action_btn_layout1"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/action_btn_layout"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/fan_btn"
+                    android:layout_toRightOf="@+id/mode_btn"
+                    android:text="Fan"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:tag="02"
+                    android:background="@drawable/remote_circle_blue"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="70dp"
+                    android:layout_height="60dp" />
+
+                <Button
+
+                    android:layout_alignParentStart="true"
+                    android:text="Mode"
+                    android:tag="03"
+                    android:background="@drawable/remote_circle_blue"
+                    android:id="@+id/mode_btn"
+                    android:layout_width="70dp"
+                    android:textColor="@color/white"
+                    android:layout_height="60dp" />
+
+
+                <Button
+                    android:text="QUITE"
+                    android:textColor="@color/white"
+                    android:background="@drawable/remote_circle_blue"
+                    android:layout_toRightOf="@+id/fan_btn"
+                    android:id="@+id/comfort_btn"
+                    android:layout_width="70dp"
+                    android:layout_marginRight="10dp"
+                    android:tag="04"
+                    android:layout_height="60dp"
+
+                    />
+
+                <Button
+                    android:text="TEMP"
+                    android:textColor="@color/white"
+                    android:background="@drawable/remote_circle_blue"
+                    android:layout_toRightOf="@+id/comfort_btn"
+                    android:id="@+id/preset_btn"
+                    android:layout_width="70dp"
+                    android:tag="07"
+                    android:layout_height="60dp"
+
+                    />
+
+
+
+            </RelativeLayout>
+
+
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>-->
+
+
+   <!-- <TextView android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/main"
+        android:text="18"
+        android:textSize="70dp"
+        android:textStyle="bold"
+        android:id="@+id/txt_temprature"
+        android:textColor="@color/admin_button_bg_color"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true" />
+
+    <org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
+        android:id="@+id/discrete_seek_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        app:dsb_max="30"
+        app:dsb_min="18"
+        android:layout_marginTop="30dp"
+        app:dsb_indicatorColor="@color/home_card_green"
+        app:dsb_progressColor="@color/home_card_green"
+        app:dsb_trackColor="@color/discrete_seek_bar_track"
+        android:layout_below="@+id/txt_temprature"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="slide here to change the temperature"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/discrete_seek_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+
+        />
+-->
+
+
+
+
+
+
+
+
+
+
+

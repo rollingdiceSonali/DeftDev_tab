@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="home_bg">#666666</color>
+    <color name="home_card">#333333</color>
+    <color name="home_card_blue">#546bde</color>
+    <color name="home_card_yellow">#E5D244</color>
+    <color name="home_card_green">#99C43C</color>
+    <color name="home_card_red">#E55B34</color>
+    <color name="home_card_gray">#50514F</color>
+    <color name="home_card_orange">#E56D1D</color>
+    <color name="transparent">#00000000</color>
+    <color name="discrete_seek_bar_track">#ffffff</color>
+    <color name="appliance_name">#99C43C</color>
+    <color name="appliance_sub">#666666</color>
+    <color name="edit_text_color">#ffffff</color>
+    <color name="white">#ffffff</color>
+    <color name="accent">#E91E63</color>
+    <color name="admin_button_bg_color">#3870e7</color>
+    <color name="admin_button_text_color">#ffffff</color>
+    <color name="appliance_name_header">#ffffff</color>
+    <color name="appliance_name_sub_header">#aaaaaa</color>
+    <color name="card_background_theme">#4021272b</color>
+
+    <color name="light_red_4">#B71C1C</color>
+    <color name="light_green_5">#43A047</color>
+    <color name="light_blue_6">#3D5AFE</color>
+
+
+    <color name="red_1">#B71C1C</color>
+    <color name="green_2">#1B5E20</color>
+    <color name="blue_3">#4A148C</color>
+
+
+    <color name="_7">#E65100</color>
+    <color name="_8">#03A9F4</color>
+    <color name="_9">#673AB7</color>
+
+
+    <color name="_10">#F57C00</color>
+    <color name="_11">#0277BD</color>
+    <color name="_12">#8E2488</color>
+
+    <color name="_13">#FFFF00</color>
+    <color name="_14">#00838F</color>
+    <color name="_15">#D81B60</color>
+
+    <color name="white17">#FFFFFF</color>
+    <color name="black17">#000000</color>
+
+    <color name="gray">#78909C</color>
+
+
+</resources>

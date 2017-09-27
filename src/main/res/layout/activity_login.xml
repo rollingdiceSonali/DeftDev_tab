@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/colourful1"
+    android:gravity="center"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    tools:context="com.rollingdice.deft.android.tab.Login">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:padding="24dp"
+        android:id="@+id/relativeLayout">
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/imageAvatar"
+            android:layout_width="400dp"
+            android:layout_height="350dp"
+            android:visibility="visible"
+            android:src="@drawable/deft_gif"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            />
+
+      <!--  <ImageView
+            android:id="@+id/imageAvatar"
+            android:layout_width="400dp"
+            android:layout_height="350dp"
+            android:visibility="visible"
+            android:src="@drawable/logo3_c"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            />
+-->
+
+        <!--<TextView
+            android:id="@+id/tv_UID"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="4dp"
+            android:textSize="30dp"
+            android:backgroundTint="@color/admin_button_text_color"
+            android:text="Enter your CORE Id"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:layout_above="@+id/etCustomerPassword"
+            android:layout_centerInParent="true"/>
+        //android:text="@string/email"-->
+
+        <EditText
+            android:id="@+id/etCustomerPassword"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:backgroundTint="@color/home_card_gray"
+            android:paddingLeft="4dp"
+            android:textSize="24dp"
+            android:text=""
+            android:textColor="@color/edit_text_color"
+            android:layout_above="@+id/btnLogin"
+            android:layout_centerInParent="true"/>
+
+        // android:text="123456"
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner"
+            android:layout_above="@+id/btnLogin"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:textColor="#000000"
+            android:textSize="24dp"
+            android:background="@drawable/button_shape"
+            android:shadowColor="#0C170E"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="2"
+            android:gravity="center"
+            android:text="ENTER"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="400dp"
+    android:layout_height="250dp"
+    android:layout_gravity="center"
+    android:layout_margin="15dp"
+    card_view:cardCornerRadius="10dp"
+    card_view:contentPadding="5dp"
+    card_view:cardBackgroundColor="@color/card_background_theme"
+                                   >
+
+    <RelativeLayout
+        android:id="@+id/relative_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:text="Create New Scene"
+            android:visibility="visible"
+            android:textColor="@color/appliance_name"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="SceneName"
+            android:textSize="25dp"
+            android:textColor="@color/appliance_name"
+            android:layout_above="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="35dp" />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Activated"
+            android:id="@+id/switch1"
+            android:textColor="@color/home_card_green"
+            android:textOn="TRUE"
+            android:textOff="FALSE"
+            android:textSize="15dp"
+            android:visibility="visible"
+            android:checked="false"
+            android:layout_above="@+id/textView"
+            android:layout_alignStart="@+id/textView1" />
+
+
+
+        <LinearLayout android:id="@+id/daylinrealayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="24dp">
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SUN"
+                android:id="@+id/button"
+                android:layout_alignTop="@+id/button6"
+                android:layout_toStartOf="@+id/button2" />
+
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MON"
+                android:id="@+id/button2"
+                android:layout_alignTop="@+id/button"
+                android:layout_toEndOf="@+id/txt_startTime" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TUE"
+                android:id="@+id/button3"
+                android:layout_alignTop="@+id/button2"
+                android:layout_toEndOf="@+id/button2" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="WED"
+                android:id="@+id/button4"
+                android:layout_alignBottom="@+id/button3"
+                android:layout_toEndOf="@+id/button3" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="THU"
+                android:id="@+id/button5"
+                android:layout_alignBottom="@+id/button4"
+                android:layout_toEndOf="@+id/button4" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FRI"
+                android:id="@+id/button6"
+                android:layout_toEndOf="@+id/button5"
+                android:layout_below="@+id/textView" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SAT"
+                android:id="@+id/button7"
+                android:layout_alignTop="@+id/button6"
+                android:layout_toEndOf="@+id/button6" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="StartTime"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:id="@+id/txt1"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/daylinrealayout" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="startTime"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:id="@+id/starttime"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/textView" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="End Time  "
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:id="@+id/txt2"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/endtime" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EndTime"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:id="@+id/endtime"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/textView" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textColor="@color/home_card_green"
+            android:text="Repeating Alarm"
+            android:id="@+id/txt_repeting"
+            android:layout_alignBottom="@+id/textView"
+            android:layout_alignEnd="@+id/daylinrealayout" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
+

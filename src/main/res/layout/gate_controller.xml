@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view_appliance"
+    android:layout_width="500dp"
+    android:layout_height="110dp"
+    android:layout_gravity="center"
+    app:cardBackgroundColor="@color/card_background_theme"
+    android:background="?android:attr/selectableItemBackground"
+    card_view:cardCornerRadius="4dp">
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="6dip"
+        android:id="@+id/user_appliance_layout">
+
+        <ImageView
+            android:id="@+id/user_appliance_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:src="@drawable/water_sprinklers_icon" />
+
+
+        <TextView
+            android:id="@+id/waterspinklerNameTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="Example application"
+            android:textStyle="bold"
+            android:textColor="@color/appliance_name_header"
+            android:textSize="18dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/user_appliance_icon"
+            />
+
+        <TextView
+            android:id="@+id/waterspinklerIDTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/waterspinklerNameTV"
+            android:layout_toRightOf="@id/user_appliance_icon"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:textColor="@color/appliance_name_header"
+            android:text="Description"
+            android:textSize="10dp" />
+
+
+        <com.rollingdice.deft.android.tab.user.SwitchCompactAir
+            android:id="@+id/spinkler_toggle_btn"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:textOn=""
+            android:textOff=""
+            android:background="@color/transparent"
+            android:button="@drawable/device_switch"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

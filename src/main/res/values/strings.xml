@@ -1,0 +1,94 @@
+<resources>
+
+    <string name="app_name">DEFT MASTER</string>
+
+    <string name="action_settings">SETTINGS</string>
+    <string name="add_user">ADD NEW USER</string>
+    <string name="title_activity_add_user_details">ADD USER DETAILS</string>
+
+    <color name="error">#EF5350</color>
+    <color name="correct">#9CCC65</color>
+    <color name="floatingLabelText">#29B6F6</color>
+
+    <string name="title_activity_room_details">Room Details</string>
+    <string name="title_activity_room_list">List of Rooms</string>
+    <string name="action_connected">CONNECTED</string>
+
+    <!--ERROR-->
+    <string name="error_passwords_mismatched">Passwords Mismatched</string>
+    <string name="saved">SAVED</string>
+    <string name="action_shortcut">SHORTCUT</string>
+    <string name="title_activity_dialog">Sensor Detail</string>
+    <string name="title_activity_appliance_details">Appliance Details</string>
+    <string name="title_activity_home">Home</string>
+    <string name="title_activity_user_room_list">Rooms</string>
+    <string name="title_activity_user_appliance_and_sensor">Appliances and Sensors</string>
+    <string name="title_activity_user_room">Room</string>
+    <string name="title_activity_user_list_of_all_on_devices">UserListOfAllOnDevicesActivity
+    </string>
+    <string name="title_activity_user_list_of_all_on_lights">UserListOfAllOnLightsActivity</string>
+    <string name="title_activity_user_list_of_all_on_fans">UserListOfAllOnFansActivity</string>
+    <string name="title_activity_user_list_of_all_on_sockets">UserListOfAllOnSocketsActivity</string>
+
+    <string name="action_start_service">START SERVICE</string>
+    <string name="action_stop_service">STOP SERVICE</string>
+    <string name="contact_details">CONTACT DETAILS</string>
+    <string name="next">NEXT</string>
+    <string name="music_player">MUSIC</string>
+
+    <string name="button_save">SAVE</string>
+    <string name="button_cancel">CANCEL</string>
+    <string name="name_hint">Name</string>
+    <string name="dimmable">Dimmable</string>
+    <string name="light">LIGHTS</string>
+    <string name="fans">FANS</string>
+    <string name="sockets">SOCKETS</string>
+    <string name="curtains">CURTAINS</string>
+    <string name="gateController">WATER SPRINKLER</string>
+    <string name="room">ROOMS</string>
+    <string name="good_bye">GOOD BYE</string>
+    <string name="lock_name_hint">LOCK_NAME</string>
+    <string name="room_name_hint">Bed Room</string>
+    <string name="slave1">SLAVE 1</string>
+    <string name="slave2">SLAVE 2</string>
+    <string name="slave3">SLAVE 3</string>
+    <string name="slave4">SLAVE 4</string>
+    <string name="button_add_sensor">ADD SENSOR</string>
+    <string name="button_add_curtain">ADD CURTAIN</string>
+    <string name="button_add_appliance">ADD APPLIANCE</string>
+    <string name="button_add_GATE_CONTROLLER">ADD WATER SPINKLER</string>
+    <string name="configure_slave">CONFIGURE SLAVES</string>
+    <string name="configure_master">CONFIGURE MASTER</string>
+
+    <string name="add_locks">ADD LOCKS</string>
+    <string name="roomWise">RoomWise</string>
+    <string name="applianceWise">ApplianceWise</string>
+    <string name="dateWise">DateWise</string>
+    <string name="CustomerName">Customer Name</string>
+    <string name="phone_number">Phone_Number</string>
+    <string name="email">Email</string>
+    <string name="used_id">USER ID</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="admin_user_id">Admin User Id</string>
+    <string name="description">Description</string>
+    <string name="title_activity_user_energy">ENERGY</string>
+
+    <string name="enable_p2p_button">P2P On/Off</string>
+    <string name="discover_peers_button">Discover</string>
+    <string name="connect_peer_button">Connect</string>
+    <string name="disconnect_peer_button">Disconnect</string>
+    <string name="get_file_button">Launch Gallery</string>
+    <string name="empty"></string>
+    <string name="yes">yes</string>
+    <string name="no">no</string>
+    <string name="client_text">This device will act as a client. Click on Gallery button to pick a local(stored) file</string>
+    <string name="empty_message">No devices found. Turn on P2P and perform discovery from the Action Bar</string>
+    <string name="p2p_off_warning">Enable P2P from action bar button above or system settings</string>
+    <string name="group_owner_text">"Am I the Group Owner? "</string>
+    <string name="label_me">ME</string>
+    <string name="label_peers">PEERS</string>
+    <string name="icon">Icon</string>
+
+
+</resources>

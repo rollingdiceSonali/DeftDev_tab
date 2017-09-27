@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view_curtains"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    card_view:cardCornerRadius="4dp">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="6dip"
+        android:id="@+id/user_curtain_layout">
+
+        <ImageView
+            android:id="@+id/user_curtain_icon"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:padding="10dp"
+            android:layout_marginRight="6dip"
+            android:src="@drawable/curtain_icon" />
+        <TextView
+            android:id="@+id/tv_user_curtain_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="Example application"
+            android:textStyle="bold"
+            android:textColor="@color/appliance_name_header"
+            android:textSize="15dp"
+           android:layout_alignParentTop="true"
+           android:layout_centerHorizontal="true" />
+
+        <TextView
+           android:id="@+id/tv_user_curtain_room_name"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/tv_user_curtain_name"
+           android:layout_toRightOf="@id/user_curtain_icon"
+           android:textColor="@color/appliance_name_sub_header"
+           android:ellipsize="marquee"
+           android:singleLine="true"
+           android:text="Description"
+           android:textSize="10dp" />
+
+        <org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
+             android:id="@+id/discrete_seek_bar_curtain"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_below="@+id/user_curtain_icon"
+             android:paddingLeft="20dp"
+             android:paddingRight="20dp"
+             app:dsb_max="5"
+             app:dsb_min="0"
+             app:dsb_indicatorColor="@color/home_card_green"
+             app:dsb_progressColor="@color/home_card_green"
+             app:dsb_trackColor="@color/discrete_seek_bar_track"
+            android:visibility="gone"/>
+
+        <ImageButton
+            android:id="@+id/btnForward"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_fast_forward_black_24dp"
+            android:layout_below="@+id/discrete_seek_bar_curtain"
+            android:layout_toLeftOf="@+id/btnStop"
+            android:visibility="gone"
+            />
+
+
+        <ImageButton
+            android:id="@+id/btnStop"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_stop_black_24dp"
+            android:layout_below="@+id/discrete_seek_bar_curtain"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"
+            />
+
+
+        <ImageButton
+            android:id="@+id/btnReverse"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_fast_rewind_black_24dp"
+            android:layout_below="@+id/discrete_seek_bar_curtain"
+            android:layout_toRightOf="@+id/btnStop"
+            android:visibility="gone"
+            />
+
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

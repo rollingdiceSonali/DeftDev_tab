@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.rollingdice.deft.android.tab.Music.MusicPlayerActivity">
+
+    <item
+        android:id="@+id/action_shuffle"
+        android:icon="@drawable/sensor"
+        android:orderInCategory="1"
+        android:title="Shuffle"/>
+
+    <item
+        android:id="@+id/action_end"
+        android:icon="@drawable/sensor"
+        android:orderInCategory="2"
+        android:title="End"/>
+
+</menu>

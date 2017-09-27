@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:toggle="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view_appliance"
+    android:layout_width="300dp"
+    android:layout_height="220dp"
+    android:layout_gravity="center"
+    android:layout_margin="15dp"
+   app:cardBackgroundColor="#4021272b"
+    card_view:cardCornerRadius="10dp"
+    card_view:contentPadding="5dp" >
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="6dip"
+        android:id="@+id/user_shortcut_relative_layout">
+
+        <ImageView
+            android:id="@+id/user_appliance_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:src="@drawable/ic_add_circle"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:id="@+id/tv_user_appliance_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/user_appliance_icon"
+            android:gravity="center_vertical"
+            android:text="Example application"
+            android:textStyle="bold"
+            android:textColor="@color/appliance_name_header"
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/tv_user_room_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_user_appliance_name"
+            android:layout_toRightOf="@id/user_appliance_icon"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:text="Description"
+            android:textColor="@color/appliance_name_sub_header"
+            android:textSize="10dp" />
+        <com.rollingdice.deft.android.tab.user.SwitchCompactAir
+            android:id="@+id/user_appliance_toggle_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            toggle:borderWidth="1dp"
+            android:textOn=""
+            android:textOff=""
+            android:background="@color/transparent"
+            android:button="@drawable/device_switch"
+            android:layout_below="@+id/user_appliance_icon"
+            android:layout_centerInParent="true"/>
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:buttonTint="@color/home_card_green"
+            android:layout_below="@+id/user_appliance_toggle_btn"
+            android:visibility="visible"
+            android:layout_centerHorizontal="true">
+            <RadioButton
+                android:id="@+id/radio_button_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/home_card_yellow"
+                android:button="@null"
+                android:layout_marginRight="10dp"
+                android:drawableBottom="@android:drawable/btn_radio"
+                android:gravity="center"
+                android:layout_weight="1"/>
+
+            <RadioButton
+                android:id="@+id/radio_button_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/home_card_yellow"
+                android:button="@null"
+                android:layout_marginRight="10dp"
+                android:drawableBottom="@android:drawable/btn_radio"
+                android:gravity="center"
+                android:layout_weight="1"/>
+
+            <RadioButton
+                android:id="@+id/radio_button_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/home_card_yellow"
+                android:button="@null"
+                android:layout_marginRight="10dp"
+                android:drawableBottom="@android:drawable/btn_radio"
+                android:gravity="center"
+                android:layout_weight="1"/>
+            <RadioButton
+                android:id="@+id/radio_button_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/home_card_yellow"
+                android:button="@null"
+                android:layout_marginRight="10dp"
+                android:drawableBottom="@android:drawable/btn_radio"
+                android:gravity="center"
+                android:layout_weight="1"/>
+            <RadioButton
+                android:id="@+id/radio_button_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/home_card_yellow"
+                android:text="5"
+                android:button="@null"
+                android:layout_marginRight="10dp"
+                android:drawableBottom="@android:drawable/btn_radio"
+                android:gravity="center"
+                android:layout_weight="1"/>
+        </RadioGroup>
+
+
+        <!--<org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
+            android:id="@+id/discrete_seek_bar_appliance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:visibility="gone"
+            app:dsb_max="5"
+            app:dsb_min="0"
+            app:dsb_indicatorColor="@color/home_card_green"
+            app:dsb_progressColor="@color/home_card_green"
+            app:dsb_trackColor="@color/discrete_seek_bar_track"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+-->
+
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

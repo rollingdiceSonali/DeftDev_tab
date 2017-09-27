@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:padding="20dp"
+    android:background="@color/transparent"
+    >
+
+    <EditText
+        android:id="@+id/etxt_fromdate"
+       android:layout_width="wrap_content"
+        android:text="From Date"
+        android:editable="false"
+        android:layout_height="wrap_content"
+        android:hint="From"
+        android:layout_marginRight="16dp"
+        android:layout_gravity="center_vertical" />
+    <!--<View
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_weight=".1"></View>-->
+
+    <EditText
+        android:id="@+id/etxt_todate"
+        android:layout_width="wrap_content"
+        android:text="  To Date "
+        android:editable="false"
+
+        android:layout_height="wrap_content"
+
+        android:hint="ToDate"
+        android:layout_gravity="center_vertical" />
+
+</LinearLayout>
+<!--
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="FromDate"
+        android:textSize="15dp"
+        android:id="@+id/fromDate"
+        android:layout_marginStart="68dp"
+        android:layout_below="@+id/datePicker"
+        android:layout_toEndOf="@+id/datePicker" />
+
+    <Button android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Select"
+        android:id="@+id/btn_fromDate"
+        android:layout_alignTop="@+id/fromDate"
+        android:layout_toEndOf="@+id/fromDate"
+        android:layout_marginStart="47dp" />
+
+
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="ToDate"
+        android:textSize="15dp"
+        android:id="@+id/toDate"
+        android:layout_alignTop="@+id/btn_fromDate"
+        android:layout_toEndOf="@+id/btn_fromDate"
+        android:layout_marginStart="82dp" />
+
+    <Button android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Select"
+        android:id="@+id/btn_toDate"
+        android:layout_alignTop="@+id/toDate"
+        android:layout_toEndOf="@+id/toDate"
+        android:layout_marginStart="51dp" />&ndash;&gt;
+
+
+    <DatePicker android:layout_height="wrap_content"
+       android:layout_width="wrap_content"
+       android:id="@+id/datePicker"
+        android:visibility="gone"
+       android:layout_marginStart="106dp" />
+
+
+
+
+
+
+
+
+
+</RelativeLayout>-->

@@ -1,0 +1,80 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- A RecyclerView with some commonly used attributes -->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_room"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       />
+
+    <ImageView
+        android:id="@+id/iv_add_room"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="12dp"
+        android:layout_marginRight="12dp"
+        android:elevation="2dp"
+        android:src="@drawable/ic_add_circle" />
+
+   <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/configure_slave"
+        android:id="@+id/btn_configure_slave"
+        android:layout_toLeftOf="@+id/iv_add_room"
+       android:layout_marginLeft="20dp"
+        android:layout_marginRight="50dp"
+        android:layout_alignParentBottom="true"
+       android:layout_marginBottom="12dp"
+        />
+
+    <Button
+        android:id="@+id/btn_config_master"
+        android:layout_width="200dp"
+        android:layout_toLeftOf="@+id/btn_configure_slave"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="12dp"
+        android:layout_alignParentBottom="true"
+        android:text="@string/configure_master"
+        android:layout_height="wrap_content" />
+
+
+    <Button
+        android:id="@+id/btn_config_sensor"
+        android:layout_width="200dp"
+        android:layout_toLeftOf="@+id/btn_config_master"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="12dp"
+        android:layout_alignParentBottom="true"
+        android:text="Assign ID"
+        android:layout_height="wrap_content" />
+
+
+
+
+    <!-- <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/add_locks"
+        android:id="@+id/btn_locks"
+        android:layout_alignTop="@+id/btn_remote_config"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Remote Configuration"
+        android:id="@+id/btn_remote_config"
+        android:layout_alignTop="@+id/iv_add_room"
+        android:layout_toRightOf="@+id/btn_locks"
+        android:layout_marginLeft="50dp"
+        />
+-->
+
+</RelativeLayout>

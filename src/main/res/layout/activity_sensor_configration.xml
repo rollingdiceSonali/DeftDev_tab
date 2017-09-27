@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+
+        tools:context="com.rollingdice.deft.android.tab.ConfigrationActivity">
+
+        <TextView
+            android:id="@+id/title_tv"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:gravity="center_horizontal"
+            android:text=" Sensor Configuration "
+            android:textSize="@dimen/headline_text" />
+        <Spinner
+            android:id="@+id/slaveconfig"
+            android:layout_width="260dp"
+            android:nextFocusDown="@+id/select_sensor_type_sp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="40dp"></Spinner>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/old_ip_til"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/old_ip_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=" i/p ID " />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/new_ip_til"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/new_ip_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=" New i/p ID " />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:id="@+id/sensor_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!--     <RadioGroup
+                     android:id="@+id/sensor_radio_group"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:gravity="center_horizontal"
+                     android:orientation="horizontal">
+
+                     <RadioButton
+                         android:id="@+id/_1_redio_btn"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="1" />
+
+
+                     <RadioButton
+                         android:id="@+id/_2_redio_btn"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_marginLeft="20dp"
+                         android:text="2" />
+
+                     <RadioButton
+                         android:id="@+id/_3_redio_btn"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_marginLeft="20dp"
+                         android:text="3" />
+
+
+                     <RadioButton
+                         android:id="@+id/_4_redio_btn"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_marginLeft="20dp"
+                         android:text="4" />
+
+                     <RadioButton
+                         android:id="@+id/_5_redio_btn"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_marginLeft="20dp"
+                         android:text="5" />
+
+
+                 </RadioGroup>-->
+
+
+           <!-- <Spinner
+                android:id="@+id/select_sensor_type_sp"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"></Spinner>-->
+
+            <fr.ganfra.materialspinner.MaterialSpinner
+                android:id="@+id/select_sensor_type_sp"
+                android:layout_width="260dp"
+                android:layout_height="match_parent"
+                app:ms_alignLabels="true"
+                app:ms_arrowSize="10dip"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center_horizontal"
+                app:ms_enableErrorLabel="true"
+                app:ms_enableFloatingLabel="true"
+                app:ms_errorColor="@color/colorAccent"
+                app:ms_hint="Select Sensor Type "
+                app:ms_multiline="true"
+                app:ms_thickness="0.2dp"
+                app:ms_thickness_error="0.2dp"
+                />
+
+
+           <!-- <android.support.design.widget.TextInputLayout
+                android:id="@+id/no_of_appliance_TIL"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/no_of_appliance_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="How many Appliances ?" />
+
+            </android.support.design.widget.TextInputLayout>-->
+
+            <fr.ganfra.materialspinner.MaterialSpinner
+                android:id="@+id/sensor_id"
+                android:layout_width="260dp"
+                android:layout_height="match_parent"
+                app:ms_alignLabels="true"
+                app:ms_arrowSize="10dip"
+                android:layout_marginTop="30dp"
+                app:ms_enableErrorLabel="true"
+                android:layout_gravity="center_horizontal"
+                app:ms_enableFloatingLabel="true"
+                app:ms_errorColor="@color/colorAccent"
+                app:ms_hint="Select Sensor Id "
+                app:ms_multiline="true"
+                app:ms_thickness="0.2dp"
+                app:ms_thickness_error="0.2dp"
+                />
+
+          <!--  <Spinner
+                android:id="@+id/sensor_id"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40dp"></Spinner>-->
+            <!-- <Spinner
+                 android:layout_gravity="center_horizontal"
+                 android:id="@+id/slave_spinner"
+                 android:layout_width="260dp"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="40dp"></Spinner>
+
+
+             <Spinner
+                 android:layout_gravity="center_horizontal"
+                 android:id="@+id/appliance_list_spinner"
+                 android:layout_width="260dp"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="40dp"></Spinner>-->
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/cmd_details_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            >
+
+
+            <TextView
+                android:id="@+id/cmd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/show_cmd_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="SHOW COMMAND"
+                android:textSize="@dimen/headline_text" />
+
+            <Button
+                android:id="@+id/btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="SEND"
+                android:textSize="@dimen/headline_text" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/response"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="600dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:text="AC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/remote_IR_id"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_marginTop="120dp"
+        android:id="@+id/top_layout"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/power_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:padding="2dp"
+            android:text="POWER ON"
+            android:tag="00"
+            />
+
+
+        <Button
+            android:id="@+id/mode_btn_btn"
+            android:layout_toRightOf="@+id/tv_power_on"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:padding="2dp"
+            android:text="POWER OFF"
+            android:tag="01"
+            />
+
+
+        <Button
+            android:id="@+id/Fan_Speed_btn_btn"
+            android:layout_toRightOf="@+id/home_btn_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:padding="2dp"
+            android:text="FAN"
+            android:tag="02"
+            />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/sec_leve_layout"
+        android:layout_below="@+id/top_layout"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+        <Button
+
+            android:id="@+id/temp_18_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:padding="2dp"
+            android:text="MODE"
+            android:tag="03"
+            />
+
+
+        <Button
+            android:id="@+id/temp_19_btn"
+            android:layout_toRightOf="@+id/power_off"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:padding="2dp"
+            android:text="COMFORT"
+            android:tag="04"
+            />
+
+
+        <Button
+            android:id="@+id/temp_20_btn"
+            android:layout_toRightOf="@+id/showcase_btn_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:padding="2dp"
+            android:text="SWING"
+            android:tag="05"
+            />
+
+
+        <Button
+            android:id="@+id/temp_21_btn"
+            android:layout_toRightOf="@+id/organiser_btn_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:padding="2dp"
+            android:text="FIX"
+            android:tag="06"
+
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/temp_layout"
+        android:layout_below="@+id/sec_leve_layout"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/temp_22_btn"
+            android:layout_toRightOf="@+id/organiser_btn_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:padding="2dp"
+            android:text="PRESET"
+            android:tag="07"
+
+            />
+        <Button
+            android:id="@+id/temp_23_btn"
+            android:layout_toRightOf="@+id/organiser_btn_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:padding="2dp"
+            android:text="Temp 18"
+            android:tag="08"
+
+            />
+        <Button
+            android:id="@+id/temp_24_btn"
+            android:layout_toRightOf="@+id/organiser_btn_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:padding="2dp"
+            android:text="Temp 20"
+            android:tag="09"
+
+            />
+        <Button
+            android:id="@+id/temp_25_btn"
+            android:layout_toRightOf="@+id/organiser_btn_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:padding="2dp"
+            android:text="Temp 22"
+            android:tag="10"
+
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/temp_below_layout"
+        android:layout_below="@+id/temp_layout"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/temp_26_btn"
+            android:layout_toRightOf="@+id/organiser_btn_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:padding="2dp"
+            android:text="Temp 24"
+            android:tag="11"
+
+            />
+        <Button
+            android:id="@+id/temp_27_btn"
+            android:layout_toRightOf="@+id/organiser_btn_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:padding="2dp"
+            android:text="Temp 26"
+            android:tag="12"
+
+            />
+        <Button
+            android:id="@+id/temp_28_btn"
+            android:layout_toRightOf="@+id/organiser_btn_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:padding="2dp"
+            android:text="Temp 28"
+            android:tag="13"
+
+            />
+        <Button
+            android:id="@+id/temp_29_btn"
+            android:layout_toRightOf="@+id/organiser_btn_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:padding="2dp"
+            android:text="Temp 30"
+            android:tag="14"
+            />
+
+    </LinearLayout>
+
+  <!--  <Button
+        android:id="@+id/btn_ok"
+        android:layout_below="@+id/temp_below_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:padding="2dp"
+        android:text="Confirm"
+        android:layout_centerHorizontal="true"
+        />-->
+
+
+</RelativeLayout><!--
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.administrator.remotedesign.MainActivity">
+
+    <TextView
+        android:text="Hello World!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
+-->

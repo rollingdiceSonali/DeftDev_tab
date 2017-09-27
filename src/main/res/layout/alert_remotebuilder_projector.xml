@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="600dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:text="PROJECTOR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/remote_IR_id"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_marginTop="120dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/top_layout"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+        <Button
+
+            android:id="@+id/proj_power_off"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:padding="2dp"
+            android:text="StandBy"
+            android:tag="01"
+            />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:padding="5dp"
+        android:layout_below="@+id/top_layout"
+        android:id="@+id/remote_circle"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:background="@drawable/remote_circle">
+
+        <Button
+            android:id="@+id/proj_mode_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/circular_btn"
+            android:padding="1dp"
+            android:text="Enter"
+            android:textColor="#FFFFFF"
+            android:tag="03"/>
+        <ImageButton
+            android:id="@+id/proj_left_arrow_btn"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/select_btn"
+            android:background="@drawable/ic_arrow_left_black"
+            android:padding="2dp"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:tag="04"/>
+
+        <ImageButton
+            android:id="@+id/proj_right_arrow_btn"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/select_btn"
+            android:background="@drawable/ic_arrow_right_black"
+            android:padding="2dp"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:tag="05"/>
+
+        <ImageButton
+            android:id="@+id/proj_up_arrow_btn"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_above="@+id/select_btn"
+            android:background="@drawable/ic_keyboard_arrow_up"
+            android:padding="2dp"
+            android:layout_width="65dp"
+            android:layout_height="50dp"
+            android:tag="06"/>
+
+        <ImageButton
+            android:id="@+id/proj_down_arrow_btn"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/proj_mode_btn"
+            android:background="@drawable/ic_keyboard_arrow_down"
+            android:padding="2dp"
+            android:layout_width="65dp"
+            android:layout_height="50dp"
+            android:tag="07"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/proj_source_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Input -"
+        android:tag="08"
+        android:layout_alignTop="@+id/top_layout"
+        android:layout_toEndOf="@+id/top_layout" />
+    <Button
+        android:id="@+id/proj_volume_minus_btn"
+        android:text="vol-"
+        android:layout_alignBottom="@+id/remote_circle"
+        android:layout_toLeftOf="@+id/remote_circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="30dp"
+        android:tag="09"/>
+
+    <Button
+        android:text="vol+"
+        android:id="@+id/proj_volume_plus_btn"
+        android:layout_above="@+id/proj_volume_minus_btn"
+        android:layout_toLeftOf="@+id/remote_circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tag="10"
+        />
+
+
+    <Button
+        android:text="Pic Mode"
+        android:id="@+id/proj_zoom_minus_btn"
+        android:layout_alignBottom="@+id/remote_circle"
+        android:layout_toRightOf="@+id/remote_circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="30dp"
+        android:tag="11"/>
+
+    <Button
+        android:text="Pointer"
+        android:id="@+id/proj_zoom_plus_btn"
+        android:layout_above="@+id/proj_zoom_minus_btn"
+        android:layout_toRightOf="@+id/remote_circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tag="12"
+        />
+
+    <Button
+        android:id="@+id/proj_page_up_btn"
+        android:text="Input +"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/remote_circle"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tag="13"/>
+
+    <Button
+        android:id="@+id/proj_page_down_btn"
+        android:text="Return"
+        android:layout_above="@+id/proj_volume_plus_btn"
+        android:layout_toStartOf="@+id/remote_circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:tag="14"/>
+
+
+  <!--  <Button
+        android:id="@+id/btn_ok"
+        android:layout_below="@+id/proj_page_up_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:padding="2dp"
+        android:text="Confirm"
+        android:tag="15"
+        android:layout_centerHorizontal="true"
+        />-->
+
+    <Button
+        android:id="@+id/proj_menu_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:padding="2dp"
+        android:text="Menu"
+        android:tag="02"
+        android:layout_above="@+id/proj_zoom_plus_btn"
+        android:layout_toEndOf="@+id/remote_circle" />
+
+    <Button
+        android:id="@+id/proj_power_on"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:padding="2dp"
+        android:text="Power ON"
+        android:tag="00"
+        android:layout_alignTop="@+id/proj_source_btn"
+        android:layout_toStartOf="@+id/proj_page_up_btn" />
+
+
+</RelativeLayout><!--
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.administrator.remotedesign.MainActivity">
+
+    <TextView
+        android:text="Hello World!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
+-->

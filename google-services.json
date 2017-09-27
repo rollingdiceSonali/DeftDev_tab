@@ -1,0 +1,438 @@
+{
+  "project_info": {
+    "project_number": "1066281208827",
+    "firebase_url": "https://deftdev-a2416.firebaseio.com",
+    "project_id": "deftdev-a2416",
+    "storage_bucket": "deftdev-a2416.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1066281208827:android:44671defe8ad8c06",
+        "android_client_info": {
+          "package_name": "com.iinspin.deft.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1066281208827-f90j0v5bp7ptubshlui0qg4b4p50fp74.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.iinspin.deft.android",
+            "certificate_hash": "dffe7d217e245dccc0b5cec5857e49ba874db457"
+          }
+        },
+        {
+          "client_id": "1066281208827-r2ohl6a58m96f98lqmuava3nfk2491t7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKxNH1isO0otq79BVJnXRchpQtKYI9F94"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1066281208827-34gflpgepvv247avi9t7hc1ua7tnsrnu.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.RollingDice.DEFT"
+              }
+            },
+            {
+              "client_id": "1066281208827-r2ohl6a58m96f98lqmuava3nfk2491t7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1066281208827:android:218121670bba4511",
+        "android_client_info": {
+          "package_name": "com.iinspin.deft.android.tab"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1066281208827-79esougmhlsmhf8brcvs5el2eec97vph.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.iinspin.deft.android.tab",
+            "certificate_hash": "8152d7e3f55f38bb8821772b87e93f29b2fdfbbf"
+          }
+        },
+        {
+          "client_id": "1066281208827-r2ohl6a58m96f98lqmuava3nfk2491t7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKxNH1isO0otq79BVJnXRchpQtKYI9F94"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1066281208827-34gflpgepvv247avi9t7hc1ua7tnsrnu.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.RollingDice.DEFT"
+              }
+            },
+            {
+              "client_id": "1066281208827-r2ohl6a58m96f98lqmuava3nfk2491t7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1066281208827:android:1c1d5a2a35b76dde",
+        "android_client_info": {
+          "package_name": "com.iinspin.deft.android.deftintelligence"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1066281208827-fq512s4lmlnfneej85btb84o2bko8u3r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.iinspin.deft.android.deftintelligence",
+            "certificate_hash": "dffe7d217e245dccc0b5cec5857e49ba874db457"
+          }
+        },
+        {
+          "client_id": "1066281208827-rel66v5mfohl9ren1ft9609rqg4v493v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.iinspin.deft.android.deftintelligence",
+            "certificate_hash": "8152d7e3f55f38bb8821772b87e93f29b2fdfbbf"
+          }
+        },
+        {
+          "client_id": "1066281208827-r2ohl6a58m96f98lqmuava3nfk2491t7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKxNH1isO0otq79BVJnXRchpQtKYI9F94"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1066281208827-34gflpgepvv247avi9t7hc1ua7tnsrnu.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.RollingDice.DEFT"
+              }
+            },
+            {
+              "client_id": "1066281208827-r2ohl6a58m96f98lqmuava3nfk2491t7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1066281208827:android:7174c425546559db",
+        "android_client_info": {
+          "package_name": "com.deft.android.alex"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1066281208827-r2ohl6a58m96f98lqmuava3nfk2491t7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKxNH1isO0otq79BVJnXRchpQtKYI9F94"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1066281208827:android:2d91d35c39eaa774",
+        "android_client_info": {
+          "package_name": "com.example.administrator.deftsample"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1066281208827-de4v4ljgej7qm4aqcjdn5kg2q044nske.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.administrator.deftsample",
+            "certificate_hash": "311cebc873691c67b544fc4b41f19e1a3a479f5e"
+          }
+        },
+        {
+          "client_id": "1066281208827-r2ohl6a58m96f98lqmuava3nfk2491t7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKxNH1isO0otq79BVJnXRchpQtKYI9F94"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1066281208827-34gflpgepvv247avi9t7hc1ua7tnsrnu.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.RollingDice.DEFT"
+              }
+            },
+            {
+              "client_id": "1066281208827-r2ohl6a58m96f98lqmuava3nfk2491t7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1066281208827:android:0fbe49fe33556943",
+        "android_client_info": {
+          "package_name": "com.rollingdice.deft.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1066281208827-r2ohl6a58m96f98lqmuava3nfk2491t7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKxNH1isO0otq79BVJnXRchpQtKYI9F94"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1066281208827:android:9720266761e74193",
+        "android_client_info": {
+          "package_name": "com.example.userdeletion"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1066281208827-mlm3muse3a5n9hsot3pgkavp51v842c0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.userdeletion",
+            "certificate_hash": "311cebc873691c67b544fc4b41f19e1a3a479f5e"
+          }
+        },
+        {
+          "client_id": "1066281208827-r2ohl6a58m96f98lqmuava3nfk2491t7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKxNH1isO0otq79BVJnXRchpQtKYI9F94"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1066281208827-34gflpgepvv247avi9t7hc1ua7tnsrnu.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.RollingDice.DEFT"
+              }
+            },
+            {
+              "client_id": "1066281208827-r2ohl6a58m96f98lqmuava3nfk2491t7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1066281208827:android:96d4001018021fa4",
+        "android_client_info": {
+          "package_name": "mydemo.deftuserdeletion"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1066281208827-ml2jrmjciahd2t3dgffg42kqhoe73s8k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "mydemo.deftuserdeletion",
+            "certificate_hash": "8fd06e77293f8aaffaeaa99a2369867956cc3c3d"
+          }
+        },
+        {
+          "client_id": "1066281208827-r2ohl6a58m96f98lqmuava3nfk2491t7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKxNH1isO0otq79BVJnXRchpQtKYI9F94"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1066281208827-34gflpgepvv247avi9t7hc1ua7tnsrnu.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.RollingDice.DEFT"
+              }
+            },
+            {
+              "client_id": "1066281208827-r2ohl6a58m96f98lqmuava3nfk2491t7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1066281208827:android:05c143339e83e24e",
+        "android_client_info": {
+          "package_name": "com.rollingdice.deft.android.tab"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1066281208827-rmmv0gqhu1nmkjg7o01js6leog4qrnuo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rollingdice.deft.android.tab",
+            "certificate_hash": "32ee8c77e45747b48aa0cd30e262c9ee120d67f8"
+          }
+        },
+        {
+          "client_id": "1066281208827-r2ohl6a58m96f98lqmuava3nfk2491t7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKxNH1isO0otq79BVJnXRchpQtKYI9F94"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1066281208827-34gflpgepvv247avi9t7hc1ua7tnsrnu.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.RollingDice.DEFT"
+              }
+            },
+            {
+              "client_id": "1066281208827-r2ohl6a58m96f98lqmuava3nfk2491t7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

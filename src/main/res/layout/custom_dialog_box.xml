@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/txt_trigger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="14dp"
+        android:text="Trigger"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="15dp"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_trigger"
+        android:layout_alignLeft="@+id/txt_trigger"
+        android:layout_alignStart="@+id/txt_trigger"
+        android:layout_marginTop="5dp"
+        android:id="@+id/radioGroup">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time Based"
+            android:id="@+id/radioButton" />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sensor Based"
+            android:id="@+id/radioButton2"/>
+
+
+    </RadioGroup>
+
+
+   <!-- <Switch
+        android:id="@+id/onOffSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ON/OFF "
+        android:layout_marginTop="47dp"
+        android:layout_below="@+id/radioGroup"
+        android:layout_alignLeft="@+id/radioGroup"
+        android:layout_alignStart="@+id/radioGroup" />-->
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Level Of Appliance"
+        android:id="@+id/txt_level"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:layout_marginTop="46dp"
+        android:layout_below="@+id/radioGroup"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:visibility="invisible"/>
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar2"
+        android:max="5"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/txt_level"
+        android:layout_marginTop="30dp"
+        android:visibility="invisible"
+        />
+
+
+</RelativeLayout>

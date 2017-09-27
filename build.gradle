@@ -1,0 +1,127 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '25.0.0'
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/dependencies.txt'
+        exclude 'META-INF/LGPL2.1'
+    }
+
+    defaultConfig {
+        applicationId "com.rollingdice.deft.android.tab"
+        minSdkVersion 19
+        targetSdkVersion 23
+        versionCode 10
+        versionName "1.10"
+
+        multiDexEnabled true
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    signingConfigs {
+        debug {
+            storeFile file("debug.keystore")
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled false
+            shrinkResources false
+            signingConfig signingConfigs.debug
+        }
+    }
+
+
+
+    repositories {
+        mavenCentral()
+        maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+        maven {
+            url 'https://houndify.com/maven/'
+        }
+        flatDir {
+            dirs 'libs','aars'
+        }
+    }
+    repositories {
+        jcenter()
+    }
+    productFlavors {
+    }
+
+
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.google.firebase:firebase-core:10.0.1'
+    compile 'com.google.firebase:firebase-auth:10.0.1'
+    compile 'com.google.firebase:firebase-database:10.0.1'
+    compile 'com.android.support:appcompat-v7:23.2.1'
+    compile 'com.android.support:recyclerview-v7:23.0.1'
+    compile 'com.android.support:cardview-v7:21.0.+'
+    compile 'com.android.support:design:22.2.0'
+   compile 'com.rengwuxian.materialedittext:library:2.1.3' ////      remove this library easily (User Details)
+    compile 'org.adw.library:discrete-seekbar:1.0.0'// seek barcurtain
+
+    compile 'com.github.ganfra:material-spinner:1.1.1'
+
+    compile 'com.michaelpardo:activeandroid:3.1.0-SNAPSHOT'
+
+   compile 'com.joanzapata.pdfview:android-pdfview:1.0.4@aar'///////////////////// use in help to show viewer
+    compile 'com.leo.simplearcloader:simplearcloader:1.0.+'
+
+    compile 'com.google.firebase:firebase-appindexing:10.0.1'
+    compile 'in.arjsna:passcodeviewlib:1.1.0'  ///    use for lock code
+    compile 'pl.droidsonroids.gif:android-gif-drawable:1.1.0'
+
+      compile ('hound.android:hound-sdk:0.2.21@aar')
+
+    compile ('hound.android:phrasespotter:1.6.0@aar')
+
+    compile ('soundhound.android:speex:1.3.0@aar')
+
+    compile ('soundhound.android:vad:1.2.0@aar')
+
+    compile 'hound.android:java-utils:1.0.0'
+
+
+    // Third party library dependencies --------------------------------------------------------------
+
+    // Parsing
+    compile 'com.android.support:support-annotations:22.2.0'
+    compile 'com.fasterxml.jackson.core:jackson-databind:2.4.0'//hhaund
+
+    testCompile 'junit:junit:4.12'
+
+}
+apply plugin: 'com.google.gms.google-services'

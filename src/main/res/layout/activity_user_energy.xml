@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/background_bedroom1">
+
+    <TextView android:id="@+id/textView"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Energy Graph"
+        android:textSize="40dp"
+        android:textColor="@color/correct"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_toLeftOf="@+id/relativeLayout1"
+        android:orientation="vertical"
+        android:backgroundTint="#fbdd1a"
+        android:background="#f7e30b"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/textView">
+
+        <TextView android:id="@+id/textView1"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Energy Consumption\n (RealTime)"
+            android:textSize="22dp"
+            android:textColor="#2d30d0"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:textStyle="bold" />
+
+        <RadioButton android:id="@+id/rd_btn_roomWise"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:height="55dp"
+            android:layout_marginTop="25dp"
+            android:text="RoomWise"
+            android:layout_below="@+id/textView1"
+            android:textColor="#2d30d0"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <RadioButton android:id="@+id/rd_btn_applianceWise"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:height="55dp"
+            android:text="ApplianceWise"
+            android:textColor="#2d30d0"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/rd_btn_roomWise"
+            android:layout_alignParentStart="true" />
+
+
+
+
+
+        <!-- <RadioGroup android:id="@+id/radioGroup1"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_below="@id/textView1"
+             android:layout_centerInParent="true">
+
+             <RadioButton android:id="@+id/rd_btn_roomWise"
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:height="55dp"
+                 android:text="RoomWise"
+                 android:textColor="#2d30d0"
+                 android:textSize="15dp"
+                 android:textStyle="bold" />
+
+             <RadioButton android:id="@+id/rd_btn_applianceWise"
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_content"
+                 android:height="55dp"
+                 android:text="ApplianceWise"
+                 android:textColor="#2d30d0"
+                 android:textSize="15dp"
+                 android:textStyle="bold" />
+
+         </RadioGroup>
+ -->
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/secondView"
+        android:layout_width="15dp"
+        android:layout_height="match_parent"
+        android:background="@color/transparent"
+        android:layout_centerHorizontal="true" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_toRightOf="@+id/secondView"
+        android:orientation="vertical"
+        android:layout_below="@+id/textView"
+        android:background="#4bb6ef"
+        android:layout_margin="10dp">
+
+        <TextView android:id="@+id/textView2"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Energy Consumed"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            />
+
+        <RadioButton android:id="@+id/rd_btn_consumed_roomWise"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:height="55dp"
+            android:text="RoomWise"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/textView2"
+            android:layout_alignParentStart="true" />
+
+
+        <RadioButton android:id="@+id/rd_btn_consumed_applianceWise"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:height="55dp"
+            android:text="ApplianceWise"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/rd_btn_consumed_roomWise"
+            android:layout_alignParentStart="true" />
+
+
+
+       <!-- <RadioGroup android:id="@+id/radioGroup2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView2"
+            android:layout_centerInParent="true">
+
+            <RadioButton android:id="@+id/rd_btn_consumed_roomWise"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:height="55dp"
+                android:text="RoomWise"
+                android:textColor="#ffffff"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <RadioButton android:id="@+id/rd_btn_consumed_applianceWise"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:height="55dp"
+                android:text="ApplianceWise"
+                android:textColor="#ffffff"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+           &lt;!&ndash; <RadioButton android:id="@+id/rd_btn_consumed_DateWise"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:height="55dp"
+                android:text="DateWise"
+                android:textColor="#ffffff"
+                android:textSize="15dp"
+                android:textStyle="bold" />&ndash;&gt;
+
+        </RadioGroup>
+-->
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lineargraphlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+        <!--
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/barChart"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/relativeLayout1"
+                android:visibility="visible"/>-->
+
+        <!-- <com.github.mikephil.charting.charts.PieChart
+             android:id="@+id/pieChart"
+             android:layout_height="match_parent"
+             android:layout_width="match_parent"
+             android:layout_below="@+id/relativeLayout1"
+             android:visibility="visible"/>
+     -->
+    </LinearLayout>
+
+</RelativeLayout>
